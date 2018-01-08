@@ -11,7 +11,13 @@ $(document).ready( function(){
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
 */
-function renderHighlightedRecipes(recipesArray) {
+function renderHighlightedRecipes(renderRecipe) {
+   //var recipes= recipesArray.highlighted;
+   for (var i=0; i<renderRecipe.length; i++){
+   	if (renderRecipe == true){
+   		renderRecipe(renderRecipe);
+   	}
+   }
 	console.log('Recipes: ', recipesArray);
 }
 
@@ -55,3 +61,4 @@ if(pagina==='index.html'){
 function printNews(){  
   $('#texto_nuevo').text('NUEVAS RECETAS')
 }
+
