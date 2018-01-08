@@ -2,6 +2,7 @@ $(document).ready( function(){
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
+	printNews();
 
 });
 
@@ -48,4 +49,9 @@ if(pagina==='index.html'){
     $('.js-back').hide();
 }else if(pagina==='recipe.html'){
     $('.js-menu').hide();
+}
+
+
+function printNews(){  
+  $('#texto_nuevo').text('NUEVAS RECETAS')
 }
