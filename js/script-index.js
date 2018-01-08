@@ -11,11 +11,11 @@ $(document).ready( function(){
 * Función que se encarga de pintar TODAS las recetas que tengan 
 * marcado el atributo "highlighted" como TRUE
 */
-function renderHighlightedRecipes(renderRecipe) {
+function renderHighlightedRecipes(recipesArray) {
    //var recipes= recipesArray.highlighted;
-   for (var i=0; i<renderRecipe.length; i++){
-   	if (renderRecipe == true){
-   		renderRecipe(renderRecipe);
+   for (var i=0; i<recipesArray.length; i++){
+   	if (recipesArray[i].highlighted == true){
+   		renderRecipe(recipesArray[i]);
    	}
    }
 	console.log('Recipes: ', recipesArray);
