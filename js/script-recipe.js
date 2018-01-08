@@ -1,9 +1,15 @@
+$(document).ready( function(){
+
+   $('#btn-secondary js-show-recipe').on('click',function(){
+      ('#btn-secondary js-show-recipe').addClass('active');
+      ('#btn-secondary js-show-make').removeClass('active');
+   });
 
 
-var path = window.location.pathname.split("/");
-var pagina = path[path.length-1];
-if(pagina==='index.html'){
-    $('.js-back').hide();
-}else if(pagina==='recipe.html'){
-    $('.js-menu').hide();
-}
+   $('#btn-secondary js-show-make').on('click',function(){
+      ('#btn-secondary js-show-recipe').removeClass('active');
+      ('#btn-secondary js-show-make').addClass('active');
+   });
+
+});
+

@@ -28,6 +28,11 @@ function renderHighlightedRecipes(recipesArray) {
 * archivo "templates/templates-recipe.html"
 */
 function renderRecipe(recipe) {
+  $('title,source.name,source.url').empty(); 
+  <div class= "col-md-6" text-center">
+  + '">+ '<h3>' + recipesArray[i].title + '</h3>'
+  </div>
+
 	console.log('Voy a pintar la receta: ', recipe);
 }
 
