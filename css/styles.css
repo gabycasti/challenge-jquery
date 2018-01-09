@@ -984,7 +984,15 @@ nav .nav-group.right {
   min-height: 16em;
   overflow: auto;
   position: relative;
+  text-align: center;
 }
+
+.imagen{
+ width: 70px;
+ height: 70px;
+ border-radius: 100%;
+}
+
 .list-activities .wrapper-message {
   top: 50%;
 }

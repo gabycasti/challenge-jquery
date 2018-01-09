@@ -59,7 +59,7 @@ function renderRecipe(recipe) {
 */
 function renderActivities(activitiesArray) {
   for (var i=0; i<activitiesArray.length; i++){
-     renderActivities(activitiesArray[i]);
+     renderActivity(activitiesArray[i]);
 
      if (activitiesArray.length > 0){
      	$('#wrapper-message').hide();
@@ -74,6 +74,27 @@ function renderActivities(activitiesArray) {
 * archivo "templates/templates-activity.html"
 */
 function renderActivity(recipe) {
+   $('.list-activities').append('<div class="row character">' +
+    '<div class= "col-md-3 text-center ">'+
+     '<img class="imagen" src="' + recipe.userAvatar +'">'+
+    '</div>' +
+    '<div class= "col-md-8 text-center">'+
+    '<h3>' + recipe.userName + '</h3>' +
+    '</div>' +
+    '<div class= "col-md-12 text-center">'+
+    '<p>Autor: ' + recipe.recipeName + '</p>' +
+    '</div>' +
+    '<div class= "col-md-12 text-center">'+
+    '<p>Autor: ' + recipe.text + '</p>' +
+    '</div>' +
+    '<div class= "col-md-12 text-center">'+
+    '<p>Autor: ' + recipe.place + '</p>' +
+    '</div>' +
+    '<div class= "col-md-12 text-center">'+
+     '<img src="' + recipe.image + '">'+
+    '</div>' +
+    '</div>')
+
 	
 }
 
