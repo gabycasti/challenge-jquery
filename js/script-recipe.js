@@ -11,5 +11,10 @@ $(document).ready( function(){
       ('#btn-secondary js-show-make').addClass('active');
    });
 
+
+$('.icon-arrow-left-alt').click(function(){
+	document.location.replace('index.html');
+})
+
 });
 
