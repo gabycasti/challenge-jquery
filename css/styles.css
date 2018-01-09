@@ -1042,6 +1042,7 @@ nav .nav-group.right {
 }
 .list-recipes {
   overflow: hidden;
+  text-align: center;
 }
 .item-recipe {
   -webkit-transform: translate3d(0, 0, 0);

@@ -27,11 +27,26 @@ function renderHighlightedRecipes(recipesArray) {
 * Aqui se tiene que crear el HTML que esta en el 
 * archivo "templates/templates-recipe.html"
 */
+
+/* 
+* Le agrego al div list_recetas con el append todo el contenido de las recetas
+* row character son clases
+* En href se indica el link a donde apunta el enlace
+* Luego otro muestra el link en la pagina
+
+ */
 function renderRecipe(recipe) {
-  $('title,source.name,source.url').empty(); 
-  <div class= "col-md-6" text-center">
-  + '">+ '<h3>' + recipesArray[i].title + '</h3>'
-  </div>
+ $('.list-recipes').append('<div class="row character">' +
+    '<div class= "col-md-6 col-md-push-3 col-md-pull-3 text-center">'+
+    '<h3>' + recipe.title + '</h3>' +
+    '</div>' +
+    '<div class= "col-md-12 text-center">'+
+    '<p>Autor: ' + recipe.source.name + '</p>' +
+    '</div>' +
+    '<div class= "col-md-12 text-center">'+
+     '<img src="img/recipes/640x480/' + recipe.name + '.jpg">'+
+    '</div>' +
+    '</div>')
 
 	console.log('Voy a pintar la receta: ', recipe);
 }
